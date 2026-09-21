@@ -4,14 +4,14 @@ Projet de régression permettant de prédire le score final d'examen
 (`Exam_Score`) d'un étudiant, et d'identifier en amont les étudiants à
 risque d'échec, afin d'aider l'équipe pédagogique dans son accompagnement.
 
-Jeu de données : [Student Performance Factors (Kaggle)](https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
+Jeu de données : (https://www.kaggle.com/datasets/lainguyn123/student-performance-factors)
 
 ## Structure des fichiers
 
 ```
 projet_score_examen/
 ├── data/
-│   └── StudentPerformanceFactors.csv   # à télécharger depuis Kaggle (non inclus)
+│   └── StudentPerformanceFactors.csv   # à télécharger depuis Kaggle 
 ├── model/
 │   ├── pipeline_final.joblib           # pipeline complet (scaler + modèle) - généré par le notebook
 │   └── colonnes_attendues.joblib       # liste ordonnée des colonnes attendues - généré par le notebook
@@ -26,7 +26,7 @@ projet_score_examen/
 ### 1. Installer les dépendances
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn xgboost joblib streamlit
+uv add pandas numpy matplotlib seaborn scikit-learn xgboost joblib streamlit
 ```
 
 ### 2. Récupérer les données
@@ -50,8 +50,6 @@ l'ordre. À la fin de l'exécution, deux fichiers sont générés dans `model/` 
 streamlit run app.py
 ```
 
-L'interface s'ouvre dans le navigateur. Renseigner le profil de
-l'étudiant dans la barre latérale puis cliquer sur **Prédire le score**.
 
 ## Description du projet
 
